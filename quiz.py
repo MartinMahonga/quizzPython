@@ -17,10 +17,12 @@ def game_start(score, lose):
 
       if user_answer.lower() == verified:
          print('Bonne réponse!\n')
+         # calcule le score du joeur
          score += 1
       else:
          print('Mauvaise réponse')
          print(f"La bonne réponse était : {true_answer}\n")
+         # compte le nombre de question manqué par le joeur
          lose += 1
 
    print(f"Vous avez fait un score de {score} point(s)")
